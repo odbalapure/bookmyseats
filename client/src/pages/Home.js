@@ -55,13 +55,12 @@ function Home() {
           onChange={(e) => searchMovie(e.target.value)}
         />
       </div>
-
       <div style={{ marginTop: "3rem" }}>
-        <div className="container section d-flex justify-content-evenly flex-wrap">
+        <div className="container d-flex justify-content-evenly flex-wrap">
           {movies.map((movie) => {
             return (
               <div
-                className="card mb-5"
+                className="card item mb-5"
                 key={movie._id}
                 style={{
                   width: "20rem",

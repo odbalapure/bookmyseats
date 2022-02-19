@@ -105,13 +105,10 @@ const checkBookedSeats = async (req, res) => {
  * @param {*} res
  */
 const getAllBookings = async (req, res) => {
-  const theaters = await Theater.find({ userId: req.user.userId });
-  const bookings = [];
-
-  for (let i = 0; i < theaters.length; i++) {
-    const shows = await Booking.find({ "movie.theaterId": theaters[i]._id });
-    bookings.push(shows);
-  }
+  const bookings = await Booking.find({
+    theaterId: req.query.theaterId,
+    theaterName: req.query.theaterName,
+  });
 
   res.status(200).json({ bookings });
 };

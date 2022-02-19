@@ -10,8 +10,8 @@ function CreateMovie() {
 
   const [genre, setGenre] = useState("");
   const [pgRating, setPgRating] = useState("");
-  const [to, setTo] = useState("");
   const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
   const [releaseDate, setReleaseDate] = useState("");
   const nameRef = useRef();
   const pgRef = useRef();
@@ -150,7 +150,7 @@ function CreateMovie() {
                 Show Timing
               </label>
               <input
-                onChange={(e) => setTo(e.target.value)}
+                onChange={(e) => setFrom(e.target.value)}
                 className="form-control"
                 id="time"
                 type="time"
@@ -162,7 +162,7 @@ function CreateMovie() {
             <div>
               <label htmlFor="time" className="form-label fw-bold"></label>
               <input
-                onChange={(e) => setFrom(e.target.value)}
+                onChange={(e) => setTo(e.target.value)}
                 className="form-control"
                 id="time"
                 type="time"
@@ -184,6 +184,7 @@ function CreateMovie() {
               <option value="Comedy">Comedy</option>
               <option value="Action">Action</option>
               <option value="Sci-Fi">Science Fiction</option>
+              <option value="Drama">Drama</option>
             </select>
           </div>
           <div className="mb-3">
