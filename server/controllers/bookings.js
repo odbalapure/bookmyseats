@@ -34,20 +34,20 @@ const bookShow = async (req, res) => {
 
   await Booking.create(booking);
 
-  // transporter.sendMail({
-  //   to: user.email,
-  //   from: "ombalapure@outlook.com",
-  //   subject: "BookMySeat booking confirmation",
-  //   html: `<h4>Hi ${user.name}!</h4>
-  //     <p>Your booking for the ${booking.movie.name} has been confirmed.</p>
-  //     <p><b>Show timing</b>: ${booking.movie.from} to ${booking.movie.to}</p>
-  //     <p><b>Date</b>: ${booking.movie.date}</p>
-  //     <p><b>Seats</b>: ${booking.movie.seats}</p>
-  //     <p><b>Total amount</b>: ${booking.movie.price}</p>
-  //     <p><b>Thanks,</b></p>
-  //     <p><b><i>BookMySeat ©</i></b></p>
-  //   `,
-  // });
+  transporter.sendMail({
+    to: user.email,
+    from: "ombalapure@outlook.com",
+    subject: "BookMySeat booking confirmation",
+    html: `<h4>Hi ${user.name}!</h4>
+      <p>Your booking for the ${booking.movie.name} has been confirmed.</p>
+      <p><b>Show timing</b>: ${booking.movie.from} to ${booking.movie.to}</p>
+      <p><b>Date</b>: ${booking.movie.date}</p>
+      <p><b>Seats</b>: ${booking.movie.seats}</p>
+      <p><b>Total amount</b>: ${booking.movie.price}</p>
+      <p><b>Thanks,</b></p>
+      <p><b><i>BookMySeat ©</i></b></p>
+    `,
+  });
 
   res.status(200).json({
     msg: `Hey ${user.name}, your booking has been confirmed!`,
