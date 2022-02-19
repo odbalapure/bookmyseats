@@ -1,4 +1,4 @@
-# boomyseats
+# BookMySeats
 
 - **Netlify Link:** https://bookmyseats.netlify.app/bookings
 - **Heroku Link:** https://bookmyseats.herokuapp.com/
