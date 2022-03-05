@@ -8,7 +8,7 @@ BookMySeats is a MERN app to book movie tickets online.
 - harishbalapure@gmail.com
 - secret
 
-**Key features:**
+## Key features
 - Authorization using JWT
 - SendGrid email Integration
 - Account activation using email verification
@@ -16,14 +16,14 @@ BookMySeats is a MERN app to book movie tickets online.
 - Payment using RazorPay
 - Sending booking confirmation email with booking details
 
-**Functionalities for user:**
+## Functionalities for user
 - Login/Register
 - Reset/Forgot password
 - Search movies
 - Select seats and show date
 - Online payment
 
-**Functionalities for admin:**
+## Functionalities for admin
 - Add, edit, update or delete theaters
 - Add movies to a particular theater
 - List shows under a theater
