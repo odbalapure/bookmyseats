@@ -5,7 +5,7 @@ BookMySeats is a MERN app to book movie tickets online.
 - **Heroku Link:** https://bookmyseats.herokuapp.com/
 
 ### Demo credentials
-- **Admin**: harishbalapure@gmail.com (secret)
+- **Admin**: prasad@gmail.com (secret)
 - **User**: ombalapure7@gmail.com (secret)
 
 ## Key features
