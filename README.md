@@ -1,7 +1,7 @@
 # BookMySeats
 BookMySeats is a MERN app to book movie tickets online.
 
-- **Netlify Link:** https://bookmyseats.netlify.app/bookings
+- **Netlify Link:** https://bookmyseats.netlify.app/
 - **Heroku Link:** https://bookmyseats.herokuapp.com/
 
 ### Demo credentials
